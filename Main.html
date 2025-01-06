@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the following survey form.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br />
+
+        <label id="email-label" for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+
+        <label id="number-label" for="number">Age:</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="1"
+          max="100"
+          placeholder="Enter your age"
+          required
+        /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Your Interest</legend>
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="options">
+          <option value="" disabled selected>Select One</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option></select
+        ><br />
+
+        <label for="theory"
+          ><input
+            type="radio"
+            id="theory"
+            name="interest"
+            value="theory"
+          />Theory</label
+        ><br />
+        <label for="practical"
+          ><input
+            type="radio"
+            id="practical"
+            name="interest"
+            value="practical"
+          />Practical</label
+        ><br />
+        <label for="both"
+          ><input type="radio" id="both" name="interest" value="both" />Theory &
+          Practical</label
+        ><br />
+      </fieldset>
+      <fieldset>
+        <legend>Types Of Programmers</legend>
+        <label for="front"
+          ><input
+            type="checkbox"
+            id="front"
+            name="programmer"
+            value="frontend"
+          />Frontend Developers</label
+        ><br />
+        <label for="back"
+          ><input
+            type="checkbox"
+            id="back"
+            name="programmer"
+            value="backend"
+          />Backend Developers</label
+        ><br />
+        <label for="full"
+          ><input
+            type="checkbox"
+            id="full"
+            name="programmer"
+            value="fullstack"
+          />Full-Stack Developers</label
+        ><br />
+        <label for="game"
+          ><input
+            type="checkbox"
+            id="game"
+            name="programmer"
+            value="game"
+          />Game Developers</label
+        ><br />
+        <label for="data"
+          ><input
+            type="checkbox"
+            id="data"
+            name="programmer"
+            value="data"
+          />Data Scientists</label
+        ><br />
+      </fieldset>
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <textarea placeholder="Tell us more about your dream career"></textarea
+        ><br />
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
